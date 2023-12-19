@@ -18,3 +18,15 @@ BONUS
 - Usare una select per inserire l'età
 - Stampare sul biglietto un numero di carrozza e un numero di biglietto casuali
 Buon divertimento! :monorotaia:
+
+
+1- creo le variabili di cui avrò bisogno
+
+2- chiedo all'utente le informazioni di cui necessito
+
+3- calcolo il prezzo del biglietto intero
+
+4- applico eventualmente lo sconto 
+
+5- pubblico sull'html il risultato con massimo 2 decimali
+
