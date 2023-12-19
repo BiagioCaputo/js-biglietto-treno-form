@@ -6,6 +6,7 @@ const kms = document.getElementById("kms");
 const button = document.getElementById("button");
 const finalprice = document.getElementById("priceticket");
 const passengerName = document.getElementById("passenger-name");
+const ticketType = document.getElementById("ticket-type");
 
 
 
@@ -21,21 +22,23 @@ button.addEventListener("click", function(){
 
     passengerName.innerText = userName;
 
-    console.log(userKms);
-    console.log(userAge);
+   
 
     if (userAge ==="maggiorenne"){
         finalprice.innerText = price.toFixed(2);
+        ticketType.innerText = "Biglietto Standard"
     }
 
     else if (userAge ==="minorenne"){
         const price20 = price - price * 20 / 100;
-        finalprice.innerText =  price20.toFixed(2);       
+        finalprice.innerText =  price20.toFixed(2);   
+        ticketType.innerText = "Biglietto Ridotto"    
     }
 
     else if (userAge ==="over65"){
         const price40 = price - price * 40 / 100;
-        finalprice.innerText = price40.toFixed(2); 
+        finalprice.innerText = price40.toFixed(2);
+        ticketType.innerText = "Biglietto Ridotto"    
     }
 
         

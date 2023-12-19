@@ -10,29 +10,62 @@
     <script defer src="js/script.js"></script>
 </head>
 <body class="px-5 py-4 text-center bg-primary">
-    <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <div class="upper-content bg-white rounded-3 shadow py-3">
-        <input id="name" type="text" placeholder="Silverio Feola">
-        <input id="kms" type="number" placeholder="Km da percorrere">
-        <label for="age">Fasce d'età</label>
-        <select name ='age' id="age">
-            <option value="maggiorenne">maggiorenne</option>
-            <option value="minorenne">minorenne</option>
-            <option value="over65">over65</option>
-        </select>
-        <button id="button" type="button">GENERA</button>
 
+
+    <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+    <div class="upper-content bg-white rounded-3 shadow py-5">
+        <div class="user-info-box mb-5 d-flex justify-content-evenly">
+            <div class="passenger-name-box">
+                <label for="Name" class="d-block mb-3">Nome Cognome</label>
+                <input id="name" type="text" placeholder="Silverio Feola">
+            </div>
+            <div class="kms-box">
+                <label for="kms" class="d-block mb-3">Km da percorrere</label>
+                <input id="kms" type="number" placeholder="Km da percorrere">
+            </div>
+            <div class="age-box">
+                <label for="age" class="d-block mb-3">Fascia d'età</label>
+                <select name ='age' id="age">
+                    <option value="maggiorenne">maggiorenne</option>
+                    <option value="minorenne">minorenne</option>
+                    <option value="over65">over65</option>
+                </select>
+            </div>
+        </div>
+        <div class="buttons-box">
+            <button id="button" type="button">GENERA</button>
+            <button id="null" type="button">Annulla</button>
+        </div>
     </div>
+
+
     <h1 class="text-white mt-3">IL TUO BIGLIETTO</h1>
+
     <div class="bottom-content bg-white rounded-3 shadow p-3">
         <h2>DETTAGLIO PASSEGGERI</h2>
-        <div class="ticket d-flex">
-            <div class="ticket-left col-4">
+        <div class="ticket d-flex border">
+            <div class="ticket-left col-4 bg-info">
                 <h3>NOME PASSEGGERO</h3>
                 <h4 id="passenger-name"></h4>
             </div>
-            <div class="ticket-right col-8">
-                <span id="priceticket"></span>
+            <div class="ticket-right col-8 p-3">
+                <table class="table border-white">
+                    <thead>
+                      <tr>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                      </tr>
+                    </thead>
+                    <tbody class="border-style-none">
+                      <tr>
+                        <td id="ticket-type"></td>
+                        <td>5</td>
+                        <td>92911</td>
+                        <td><span id="priceticket"></span></td>
+                      </tr>
             </div>
         </div>
     </div>
