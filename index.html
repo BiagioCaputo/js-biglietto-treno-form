@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
 </head>
-<body class="px-5 py-4 text-center bg-primary">
+<body class="px-5 py-4 bg-primary">
 
 
-    <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <h1 class="text-white text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
     <div class="upper-content bg-white rounded-3 shadow py-5">
         <div class="user-info-box mb-5 d-flex justify-content-evenly">
             <div class="passenger-name-box">
                 <label for="Name" class="d-block mb-3">Nome Cognome</label>
-                <input id="name" type="text" placeholder="Silverio Feola">
+                <input id="name" type="text" placeholder="Nome e cognome">
             </div>
             <div class="kms-box">
                 <label for="kms" class="d-block mb-3">Km da percorrere</label>
@@ -33,19 +33,19 @@
                 </select>
             </div>
         </div>
-        <div class="buttons-box">
+        <div class="buttons-box d-flex justify-content-center gap-4">
             <button id="button" type="button">GENERA</button>
             <button id="null" type="button">Annulla</button>
         </div>
     </div>
 
 
-    <h1 class="text-white mt-3">IL TUO BIGLIETTO</h1>
+    <h1 class="text-white mt-3 text-center">IL TUO BIGLIETTO</h1>
 
     <div class="bottom-content bg-white rounded-3 shadow p-3">
         <h2>DETTAGLIO PASSEGGERI</h2>
         <div class="ticket d-flex border">
-            <div class="ticket-left col-4 bg-info">
+            <div class="ticket-left col-4 bg-info p-4">
                 <h3>NOME PASSEGGERO</h3>
                 <h4 id="passenger-name"></h4>
             </div>
