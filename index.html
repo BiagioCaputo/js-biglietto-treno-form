@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
 </head>
-<body>
-    <div>
+<body class="px-5 py-4 text-center bg-primary">
+    <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="upper-content bg-white rounded-3 shadow py-3">
+        <input id="name" type="text" placeholder="Silverio Feola">
         <input id="kms" type="number" placeholder="Km da percorrere">
         <label for="age">Fasce d'età</label>
         <select name ='age' id="age">
@@ -21,9 +23,18 @@
         <button id="button" type="button">GENERA</button>
 
     </div>
-
-    <div>
-        <span id="priceticket"></span>
+    <h1 class="text-white mt-3">IL TUO BIGLIETTO</h1>
+    <div class="bottom-content bg-white rounded-3 shadow p-3">
+        <h2>DETTAGLIO PASSEGGERI</h2>
+        <div class="ticket d-flex">
+            <div class="ticket-left col-4">
+                <h3>NOME PASSEGGERO</h3>
+                <h4 id="passenger-name"></h4>
+            </div>
+            <div class="ticket-right col-8">
+                <span id="priceticket"></span>
+            </div>
+        </div>
     </div>
     
 </body>

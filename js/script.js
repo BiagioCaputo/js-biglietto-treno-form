@@ -1,10 +1,11 @@
 console.log("JS OK");
 
 //creo le mie variabili
-
+const name = document.getElementById("name")
 const kms = document.getElementById("kms");
 const button = document.getElementById("button");
 const finalprice = document.getElementById("priceticket");
+const passengerName = document.getElementById("passenger-name");
 
 
 
@@ -13,10 +14,12 @@ const finalprice = document.getElementById("priceticket");
 button.addEventListener("click", function(){
 
     //recupero i dati dell'utente
-
+    const userName = name.value;
     const userKms = parseInt(kms.value);
     const userAge = document.getElementById("age").value;
     const price = userKms * 0.21;
+
+    passengerName.innerText = userName;
 
     console.log(userKms);
     console.log(userAge);
