@@ -7,6 +7,8 @@ const button = document.getElementById("button");
 const finalprice = document.getElementById("priceticket");
 const passengerName = document.getElementById("passenger-name");
 const ticketType = document.getElementById("ticket-type");
+const randomCarriage =  document.getElementById("random-carriage");
+const randomCp =  document.getElementById("random-cp");
 
 
 
@@ -19,8 +21,14 @@ button.addEventListener("click", function(){
     const userKms = parseInt(kms.value);
     const userAge = document.getElementById("age").value;
     const price = userKms * 0.21;
+    const randomNumCar = Math.floor(Math.random() * (21 - 1 )+1);
+    const randomNumCp = Math.floor(Math.random() * (99999 - 90000)+90000);
 
     passengerName.innerText = userName;
+
+    randomCarriage.innerText = randomNumCar;
+
+    randomCp.innerText = randomNumCp;
 
    
 
